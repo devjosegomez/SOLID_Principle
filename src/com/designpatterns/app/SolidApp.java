@@ -1,5 +1,7 @@
 package com.designpatterns.app;
 
+import com.designpatterns.model.Book;
+
 /*
 	---		Single responsible principle		---
 	A software entity (class, method) should have only one reason to change
@@ -17,10 +19,14 @@ package com.designpatterns.app;
 
 
 public class SolidApp {
-
+	
 	public static void main(String[] args) {
+		Book principito = new Book();
+		principito.setNumOfPages(510);
+		principito.setAuthorName("Antoine de Saint-Exupéry");
 		
-
+		principito.toString();
+		
 	}
 
 }
