@@ -25,8 +25,9 @@ public class SolidApp {
 		principito.setNumOfPages(510);
 		principito.setAuthorName("Antoine de Saint-Exupéry");
 		
-		principito.toString();
-		
+		System.out.println(principito.toString());
+		principito.save();
+		principito.print();
 	}
 
 }
